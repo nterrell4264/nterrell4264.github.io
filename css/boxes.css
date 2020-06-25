@@ -1,0 +1,35 @@
+body{
+	background-color: #ccc;
+	max-width: 1000px;
+	text-align: center;
+}
+
+img{
+	width: 100%;
+	max-width: 500px;
+	margin: auto;
+}
+iframe{
+	width: 100%;
+	max-width: 500px;
+	height: 300px;
+	margin: auto;
+}
+
+h1{
+	font-family: 'beryliumregular';
+}
+p{
+	text-align: left;
+}
+
+/*Hyperlinks*/
+a:link {
+	color:#930;
+}
+a:active {
+	color:#f90;
+}
+a:visited {
+	color:#c60;
+}
