@@ -1,4 +1,29 @@
 \# nterrell4264.github.io
+<!-- FONT
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+(setq markdown-css-paths '("fonts/Berylium/stylesheet.css"))
+
+<!-- CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+(setq markdown-css-paths '("/css/normalize.css"))
+(setq markdown-css-paths '("/css/skeleton.css"))
+(setq markdown-css-paths '("/fonts/font-awesome/css/font-awesome.min.css"))
+(setq markdown-css-paths '("/css/portfolio.css"))
+
+<!-- Magnific
+-------------------------------------------------- -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+</script>
+(setq markdown-css-paths '("magnific/magnific.css"))
+
+<!-- Fancybox
+-------------------------------------------------- -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js">
+</script>
+(setq markdown-css-paths '("fancybox-master/dist/jquery.fancybox.min.css"))
+<script src="fancybox-master/dist/jquery.fancybox.min.js">
+</script>
+
 
 Nathan Terrell
 ==============
