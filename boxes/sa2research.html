@@ -6,20 +6,23 @@
 </head>
 <body>
 	<h1>Sonic Adventure 2: Reverse Engineering Level Objects and the Hunting Algorithm</h1>
-	<img src="../images/sa2am1pieces.png" alt="A map of Aquatic Mine, featuring all emerald locations." />
-	<p>In creating the Piece Expansion Mod and in pursuing my hobby of speedrunning the game, I had to disect first the way the game reads its object files. 
-	Previously, people had made tools to extract the data, and discovered the general structure of an object: 
-	Three floats for location, three hexadecimal values commonly used for rotation, and three floats commonly used for scale.
-	However, I was the first person to play with the values to discover what they actually change about each particular object type. 
-	<a href="https://docs.google.com/spreadsheets/d/1ShP3eTRoYKhqAZhSuecLgZmwRibp96bLbN-viI7QrXU/edit#gid=165640298">
-	I've documented my work on a public spreadsheet as a reference for other modders-to-be.</a></p>
-	<p>One of the game's three playstyles requires finding three randomly selected collectibles in an open, 3D environment.
-	The collectibles are not randomly generated, however; they are selected from pre-created locations stored in these same files. 
-	The game does so using a mathematical algorithm, and I coded a tool in C# that recreates the algorithm and records results from any step of the process, 
-	<a href="../downloads/Combo Calculator.zip" download>available for download here</a>.
-	I've compiled all of that data into another set of spreadsheets, 
-	<a href="https://drive.google.com/drive/folders/1RW00L3s5yO7mS6Cf8DkzT8poYZKVW4Fl?usp=sharing">which is also publicly available.</a></p>
-	<p>Using the object data, I've also begun working on making maps of each level, starting with the one at the top. This is going to be a collaborative project,
-	as game designer <a href="http://mbarbier.wixsite.com/portfolio">Magali Barbier</a> has taken an interest in making even more detailed maps and analyzing level design choices.</p>
+	<p>In creating mods for <i>Sonic Adventure 2</i>, first I had to disect the way the game reads its object files. 
+	Each stage has a list of objects it can load, and then a binary setfile that contains all of the objects in the stage.
+	Previously, other people dug into the assembly to extract the data, figured out the general structure of these lists and of each object, and created 
+	rudimentary editors of the setfiles to allow for level mods.
+	<img src="../images/seteditor.png" alt="Screenshot of a setfile editor with level objects." />
+	<p>However, I am the first (and only) person to experiment with the parameters of each object type to discover what they actually change about them.
+	I have <a href="https://drive.google.com/drive/folders/1hAtkVuFKYAcfgYV6HmCD1KyoBrzMC0-e?usp=sharing">documented my work on public spreadsheets</a> 
+	as a reference other modders-to-be as well as myself.</p>
+	<p>Another part of research I contributed to is understanding the random generation of collectibles for one of the game's three playstyles, 
+	which has the objective of finding the spawned collectibles. This generation isn't true random: There's a pre-defined list of potential locations 
+	(also located within the setfile) and the game uses a mathematical formula to attempt to generate a set of locations that aren't too close together.</p>
+	<img src="../images/sa2am1pieces.png" alt="A map of all of the emerald locations." />
+	<p>I coded a tool in C# that recreates the algorithm using either the game files directly or an arbitrary dataset defined in a CSV, allowing it to be used 
+	in custom levels. This tool is <a href="../downloads/Combo Calculator.zip" download>available for download here</a>. 
+	What's more, I compiled all of the data for the game's existing levels into another set of spreadsheets, 
+	<a href="https://drive.google.com/drive/folders/1RW00L3s5yO7mS6Cf8DkzT8poYZKVW4Fl?usp=sharing">which is also publicly available.</a> 
+	The data has aided speedrunners in calculating probabilities of finding the collectibles in certain areas, which optimizes their searches 
+	to complete levels faster.</p>
 </body>
 </html>

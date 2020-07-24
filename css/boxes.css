@@ -14,6 +14,10 @@ iframe{
 	max-width: 500px;
 	height: 300px;
 	margin: auto;
+	display: inline-block;
+	frameborder: 0;
+	scrolling: no;
+	allowfullscreen: true;
 }
 
 h1{
