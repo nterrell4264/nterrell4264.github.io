@@ -97,7 +97,7 @@ iframe{
 	background-color: #666;
 }
 .media li{
-	font-size: em;
+	/*font-size: em;*/
 	display: inline;
 	padding: 0 2%;
 }
@@ -105,7 +105,7 @@ iframe{
 	color: #ddd;
 }
 .media li.google a:hover{ color: rgb(222,83,71);}
-.media li.facebook a:hover{ color: rgb(59,89,152);}
+.media li.salesforce a:hover{ color: rgb(0,161,224);}
 .media li.linkedin a:hover{ color: rgb(0,123,182);}
 .media li.handshake a:hover{ color: rgb(253,206,74);}
 .media li.gitlab a:hover{ color: rgb(252,109,38);}
