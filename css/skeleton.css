@@ -414,6 +414,7 @@ there.
 @media (min-width: 450px) {
 	.profile {
 		padding: 5px;
+		padding-top: 0;
 	}
 	.profile img {
 		float: left;
@@ -428,12 +429,18 @@ there.
 	.media li {
 		font-size: 2em;
 	}
+	.nav li {
+		font-size: 2rem;
+	}
 }
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
 	.media li {
 		font-size: 2.5em;
+	}
+	.nav li {
+		padding: 0 4%;
 	}
 }
 
