@@ -1,0 +1,208 @@
+/* Page Layout */
+body {
+	background-color: #f8f8ff;
+	text-align: center;
+}
+.background {
+	position: fixed;
+	top: -25px;
+	margin: auto;
+}
+.background img {
+	width: 800px;
+}
+.section {
+	margin: 70px 0 0 0;
+}
+.row {
+	padding-top: 20px;
+}
+.header {
+	font-size: 1.2em;
+	vertical-align: center;
+	padding: 5px 20px;
+	position: fixed;
+	top: 0px;
+}
+.footer {
+	font-size: 1.6rem;
+	color: #666;
+}
+.bar {
+	background-color: #EEF1FE;
+}
+
+.project {
+	padding: 20px 0;
+	vertical-align: bottom;
+}
+.content {
+	margin: auto;
+	padding: 20px 10%;
+}
+
+/* Element formatting */
+h4, h6 {
+	font-weight: bold;
+}
+sf {
+	color:#00A1E0;
+}
+a:link {
+	color: #000;
+}
+a:active {
+	color:#00A1E0;
+}
+a:visited {
+	color:#000;
+}
+
+.head {
+	text-decoration: underline;
+}
+.contact p {
+	padding: 5px 5px 0 0;
+	display: inline;
+}
+.contact li {
+	font-size: 2em;
+}
+.contact li a {
+	color: #666;
+}
+
+.project a {
+	text-decoration: none;
+	text-align: bottom;
+}
+.project div {
+	background-color: #CEDAE5;
+}
+.project img {
+	max-width: 100%;
+	max-height: 250px;
+	margin: auto;
+	display: block;
+}
+.item {
+	padding: 20px;
+	background-color: #CEDAE5;
+}
+
+.fancybox-slide--iframe .fancybox-content {
+    max-width: 1000px;
+    max-height: 80%;
+}
+iframe {
+	width: 100%;
+	max-width: 960px;
+	height: 500px;
+	margin: auto;
+}
+
+.profile p {
+	text-align: left;
+	font-size: 1.1em;
+	padding: 5px 10px;
+	background-color: #EEF1FE;
+}
+.profile img {
+	background-color: #CEDAE5;
+	padding: 20px;
+	width: 100%;
+	max-width: 200px;
+}
+.nav ul {
+	padding-top: 2%;
+}
+.nav li {
+	display: inline;
+}
+.footer ul {
+	display: block;
+	list-style-type: none;
+}
+.footer li {
+	display: inline;
+	padding: 0 5%;
+	margin: 0;
+}
+
+/* Media Queries */
+@media (min-width: 300px) {
+	.main {
+		margin-bottom: 100px;
+	}
+	.header {
+		position: fixed;
+		top: 0px;
+	}
+	.footer {
+		position: fixed;
+		bottom: 0px;
+	}
+}
+
+@media (min-width: 450px) {
+	.bar {
+		display: flex;
+		flex-direction: row;
+		vertical-align: center;
+	}
+	.top {
+		padding: 20px;
+	}
+	.intro {
+		text-align: left;
+		width: 50%;
+		flex: 1;
+	}
+	.profile img {
+		margin: 10px 20px;
+	}
+	.fancybox-slide {
+		padding: 44px;
+	}
+	.contact {
+		width: 50%;
+		flex: 1;
+	}
+	.contact p {
+		display: block;
+	}
+}
+
+@media (min-width: 550px) {
+	.main {
+		padding: 0 10%;
+	}
+	.head {
+		margin: 20px;
+	}
+	.project div {
+		padding: 20px;
+	}
+	.footer {
+		display: flex;
+		flex-direction: row;
+		vertical-align: center;
+	}
+	.contact p {
+		text-align: left;
+	}
+}
+
+@media (min-width: 650px) {
+	.profile {
+		padding: 0;
+	}
+}
+
+/*Media icons*/
+.media li.google a:hover { color: rgb(222,83,71);}
+.media li.salesforce a:hover { color: rgb(0,161,224);}
+.media li.linkedin a:hover { color: rgb(0,123,182);}
+.media li.handshake a:hover { color: rgb(253,206,74);}
+.media li.gitlab a:hover { color: rgb(252,109,38);}
+.media li.twitch a:hover { color: rgb(100,65,164);}

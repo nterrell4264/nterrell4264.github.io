@@ -1,18 +1,22 @@
 /*Main Layout */
 body {
-	background-color: #252;
+	background-color: #6FA86F;
 }
 .header {
-	background-color: #fc0;
+	background-color: #FFC87F;
 	text-align: center;
 	border: 10px solid black;
 	border-top: none;
 }
 
 /*Train Style*/
+.container {
+	padding: 0;
+	max-width: 1270px;
+}
 .main {
-	border-left: 25px solid #610;
-	border-right: 25px solid #610;
+	border-left: 25px solid #7F3F1F;
+	border-right: 25px solid #7F3F1F;
 }
 .section {
 	background-color: #ccc;
@@ -41,17 +45,28 @@ h1, h2, h3, h4, h5 {
 h6 {
 	text-decoration: underline;
 }
+a:link {
+	color:#930;
+}
+a:active {
+	color:#f90;
+}
+a:visited {
+	color:#c60;
+}
 
-.nav {
+.navbar {
+	position: sticky;
+	top: 0;
 	display: block;
 	list-style-type: none;
 	text-align: center;
-	background-color: #fc0;
+	background-color: #FFC87F;
 	border: 10px solid black;
 	border-top: none;
 	padding: 5px 0;
 }
-.nav li {
+.navbar li {
 	display: inline;
 	font-size: 1.6rem;
 	padding: 0 2%;
@@ -89,7 +104,7 @@ h6 {
 }
 
 .fancybox-slide--iframe .fancybox-content {
-    max-width: 80%;
+    max-width: 1000px;
     max-height: 80%;
 }
 iframe {
@@ -109,7 +124,7 @@ iframe {
 	text-align: center;
 	background-color: #666;
 }
-.media li { /* Dynamic size handled in skeleton.css*/
+.media li {
 	display: inline;
 	font-size: 1.5em;
 	padding: 0 5%;
@@ -124,3 +139,59 @@ iframe {
 .media li.handshake a:hover { color: rgb(253,206,74);}
 .media li.gitlab a:hover { color: rgb(252,109,38);}
 .media li.twitch a:hover { color: rgb(100,65,164);}
+
+/* Media Queries */
+@media (min-width: 350px) {
+	.main {
+		border-left: 50px solid #7F3F1F;
+		border-right: 50px solid #7F3F1F;
+	}
+}
+
+@media (min-width: 450px) {
+	.container {
+		width: 85%;
+		padding: 0;
+	}
+	.profile {
+		padding: 5px;
+		padding-top: 0;
+	}
+	.profile img {
+		float: left;
+	}
+	.contact {
+		width: 50%;
+		flex: 1;
+	}
+	.contact p {
+		display: block;
+	}
+}
+
+@media (min-width: 550px) {
+	.container {
+		width: 80%;
+	}
+	.contact p {
+		text-align: left;
+	}
+}
+
+@media (min-width: 750px) {
+	.media li {
+		font-size: 2em;
+	}
+	.navbar li {
+		font-size: 2rem;
+	}
+}
+
+@media (min-width: 1000px) {
+	.media li {
+		font-size: 2.5em;
+	}
+	.navbar li {
+		padding: 0 4%;
+	}
+}

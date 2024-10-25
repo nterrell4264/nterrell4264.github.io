@@ -1,15 +1,14 @@
-body{
+body {
 	background-color: #ccc;
-	max-width: 1000px;
 	text-align: center;
 }
 
-img{
+img {
 	width: 100%;
 	max-width: 500px;
 	margin: auto;
 }
-iframe{
+iframe {
 	width: 100%;
 	max-width: 500px;
 	height: 300px;
@@ -20,10 +19,10 @@ iframe{
 	allowfullscreen: true;
 }
 
-h1{
+h1 {
 	font-family: 'beryliumregular';
 }
-p{
+p {
 	text-align: left;
 }
 
